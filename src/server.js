@@ -47,6 +47,7 @@ wss.on("connection", (ws) => {
         devices[data.deviceId].charging = data.charging ?? devices[data.deviceId].charging;
         devices[data.deviceId].network = data.network || devices[data.deviceId].network;
       }
+      
 
       // Device sends its contacts list
       if (data.type === "contacts") {
